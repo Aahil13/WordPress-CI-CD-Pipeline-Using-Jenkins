@@ -10,5 +10,7 @@ blocks:
       prologue:
         commands:
           - echo "Running setup script..."
-          - ./setup_wordpress_mysql.sh
-      jobs: []
+      jobs:
+        - name: Run setup script
+          commands:
+            - ./setup_wordpress_mysql.sh
